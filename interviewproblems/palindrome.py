@@ -1,16 +1,14 @@
-#-----------
-
 # Write a program to check if the given number is a palindrome number.
 # A palindrome number is a number that is same after reverse. For example 545, is the palindrome numbers
 
-# userNum = (input('Please type in a palindrome number: '))
-# reversedInput = (userNum[::-1])
+userNum = (input('Please type in a palindrome number: '))
+reversedInput = (userNum[::-1])
 
-# # for x in userNum:
-# if userNum == reversedInput:
-#     print('%s is a palindrome' % userNum)
-# else:
-#     print('%s is not a palindrome' % userNum)
+# for x in userNum:
+if userNum == reversedInput:
+    print('%s is a palindrome' % userNum)
+else:
+    print('%s is not a palindrome' % userNum)
 
 # ---
 
@@ -50,20 +48,3 @@
 
 
 
-# Write a short program that prints each number from 1 to 100 on a new line. 
-
-# For each multiple of 3, print "Fizz" instead of the number. 
-
-# For each multiple of 5, print "Buzz" instead of the number. 
-
-# For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
-
-# for x in range(1, 101):
-# #     if x % 3 == 0 and x % 5 == 0:
-# #         print('FizzBuzz')
-# #     elif x % 3 == 0:
-# #         print('Fizz')
-# #     elif x % 5 == 0:
-# #         print('Buzz')
-# #     else: 
-#         # print(x)
