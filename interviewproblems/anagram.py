@@ -3,6 +3,9 @@
 #Ex: Debit Card -> Bad Credit
 #    Listen -> Silent
 
+from collections import Counter 
+
+
 s1 = input('Please enter a word: ')
 s2 = input('Please enter another word: ')
 
