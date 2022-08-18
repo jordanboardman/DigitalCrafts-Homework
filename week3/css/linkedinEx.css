@@ -1,6 +1,64 @@
+body {
+  font-size: 24px;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+.header,
+.sidebar-left,
+.sidebar-right,
+.footer {
+  padding: 25px;
+}
+
+.header {
+}
+
+.main {
+  order: 2;
+}
+
+.sidebar-left {
+  order: 1;
+  width: 20%;
+}
+
 .content {
   display: flex;
   flex: 1;
+}
+
+.sidebar-right {
+  width: 30%;
+  order: 3;
+}
+
+.structure {
+  display: flex;
+  min-height: 100px;
+  flex-direction: column;
+}
+
+.footer {
+  border-top: 3px solid black;
+}
+
+.avatar {
+  vertical-align: middle;
+  float: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.linkedinlogo {
+  width: 40.99px;
+  height: 40.99px;
 }
 
 .headerpic {
@@ -8,59 +66,9 @@
   height: 195.5px;
 }
 
-.search {
-  float: left;
-  padding: 6px;
-  margin-top: 8px;
-  margin-right: 16px;
-  border-color: grey;
-  font-size: 17px;
-  border-radius: 5%;
-}
-
 .profilepic {
   vertical-align: middle;
   width: 152px;
   height: 152px;
   border-radius: 50%;
-}
-
-.avatar {
-  vertical-align: middle;
-  float: right;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-}
-
-/* Style the links inside the navigation bar */
-.nav a {
-  float: right;
-  color: #00000099;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-  background-color: white;
-  overflow: hidden;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-  background-color: #04aa6d;
-  color: white;
-}
-
-.dot {
-  height: 2px;
-  width: 2px;
-  background-color: rgb(0, 0, 0);
-  border-radius: 50%;
-  display: inline-block;
 }
