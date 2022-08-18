@@ -16,9 +16,6 @@ h2 {
   padding: 25px;
 }
 
-.header {
-}
-
 .main {
   order: 2;
 }
@@ -57,17 +54,30 @@ h2 {
 }
 
 .linkedinlogo {
+  justify-content: flex-start;
   width: 40.99px;
   height: 40.99px;
 }
 
+.banner {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
 .headerpic {
+  position: relative;
+  top: 0;
+  left: 0;
   width: 782px;
   height: 195.5px;
+  border-radius: 2%;
 }
 
 .profilepic {
-  vertical-align: middle;
+  position: absolute;
+  top: 30px;
+  left: 30px;
   width: 152px;
   height: 152px;
   border-radius: 50%;
