@@ -1,10 +1,11 @@
-body {
-  align-self: center;
+.content {
+  display: flex;
+  flex: 1;
 }
 
-.logo {
-  width: 40.99px;
-  height: 40.99px;
+.headerpic {
+  width: 782px;
+  height: 195.5px;
 }
 
 .search {
