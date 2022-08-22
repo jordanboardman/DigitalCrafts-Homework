@@ -31,8 +31,8 @@ userInput = input('Type in a combination of open/close characters, i.e.: ( ), { 
 
 # print(openClose(userInput))
 
-# open_list = ["[","{","("]
-# close_list = ["]","}",")"]
+open_list = ["[","{","("]
+close_list = ["]","}",")"]
   
 # Function to check parentheses
 def check(myStr):
