@@ -1,4 +1,5 @@
-# #4. Day of the Week (NOT COMPLETED)
+# Easy #4. Day of the Week (NOT COMPLETED)
+
 # Given the following code which prompts the user for a day number (Remember that the int function converts a numeric string to a number):
 
 # day = int(input('Day (0-6)? '))
