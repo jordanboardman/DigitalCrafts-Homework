@@ -39,6 +39,10 @@ h2 {
   display: flex;
   min-height: 100px;
   flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: lightgray;
 }
 
 .footer {
@@ -81,4 +85,12 @@ h2 {
   width: 152px;
   height: 152px;
   border-radius: 50%;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: whitesmoke;
 }

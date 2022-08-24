@@ -1,16 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
+<!-- Title Section -->
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linkedin Clone</title>
     <link rel="stylesheet" href="../css/linkedinClone.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
 </head>
 
 <body>
     <div class="structure">
+
+        <!-- Nav Section -->
         <header class="header">
             <div>
                 <img src="./600px-LinkedIn_logo_initials Small.jpeg" alt="Linkedin Logo" class="linkedinlogo" />
@@ -21,20 +31,18 @@
                 <a href="#">Messaging</a>
                 <a href="#">Notifications</a>
                 <img src="./Wedding:Pro Pic.jpeg" alt="Avatar" class="avatar" />
-
                 <hr />
             </div>
         </header>
 
-        <!-- Put center stuff in here, one div at a time. -->
+        <!-- 'Box' sections -->
         <section class="content">
             <main class="main">
-                <h2></h2>
-                <div class="banner">
+
+                <!-- Banner | Done -->
+                <!-- <div class="banner">
                     <img src="./The Other Place.jpg" alt="The Other Place Painting" class="headerpic">
                     <img src="./Wedding:Pro Pic.jpeg" alt="Profile Picture" class="profilepic" />
-                </div>
-                <div>
                     <h1><b>Jordan Boardman</b></h1>
                     <h2>Software Developer</h2>
                     <h3>Charleston, SC</h3>
@@ -43,34 +51,45 @@
                     <a href="#" class="85">85 connections</a>
                     <img src="./digitalcrafts logo.jpeg" alt="DigitalCrafts Logo">
                     <h5>DigitalCrafts</h5>
-                </div>
+                </div> -->
 
-                <div class="button">
-                    <button>Open to</button>
-                    <button>Add profile section</button>
-                    <button>More</button>
-                </div>
+                <div class="card">
+                    <div>
+                        <img src="./The Other Place.jpg" class="headerpic" alt="...">
+                        <img src="./Wedding:Pro Pic.jpeg" class="profilepic" alt="...>" </div>
+                        <div class="card-body">
+                            <h3 class="card-title">Jordan Boardman</h3>
+                            <h5 class="card-text">Software Developer</h5>
+                            <h6> Charleston, South Carolina, United States | <a href="#">Contact Info</a></h6>
+                        </div>
+                    </div>
 
-                <div class="about">
-                    <h2>About</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis ab doloribus in
-                        illum id,
-                        corporis
-                        facilis quibusdam voluptatem magni molestias, vel, quidem omnis! Pariatur sequi mollitia
-                        voluptatum eius
-                        nihil!
-                    </p>
-                </div>
+                    <div class="button">
+                        <button>Open to</button>
+                        <button>Add profile section</button>
+                        <button>More</button>
+                    </div>
 
-                <div class="activity">
-                    <h3>Activity</h3>
-                    <h4>Jordan Boardman reshared a post</h4>
-                    <button class="startapost">Start a post</button>
-                    <a href="#" class="85followers">85 Followers</a>
-                    <hr>
+                    <!-- <div class="about">
+                        <h2>About</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam perspiciatis ab doloribus in
+                            illum id,
+                            corporis
+                            facilis quibusdam voluptatem magni molestias, vel, quidem omnis! Pariatur sequi mollitia
+                            voluptatum eius
+                            nihil!
+                        </p>
+                    </div>
 
-                    <!-- Add more to activity? -->
-                </div>
+                    <div class="activity">
+                        <h3>Activity</h3>
+                        <h4>Jordan Boardman reshared a post</h4>
+                        <button class="startapost">Start a post</button>
+                        <a href="#" class="85followers">85 Followers</a>
+                        <hr>
+
+                        <!-- Add more to activity? -->
+                    <!-- </div>
 
                 <div class="experience">
                     <button class="+">+</button>
@@ -79,7 +98,8 @@
                     <h4>Freelance Musician</h4>
                     <h5>Self-employed</h5>
                     <h5>Jun 2008 - Present · 14 yrs 3 mos</h5>
-                    <p>Various gig worked including playing drums in jazz groups, local artists, and more.Various gig
+                    <p>Various gig worked including playing drums in jazz groups, local artists, and more.Various
+                        gig
                         worked
                         including
                         playing drums in jazz groups, local artists, and more.
@@ -102,13 +122,18 @@
                     <h4>Software Developer</h4>
                     <h5>CODE/+/TRUST · Internship</h5>
                     <h5>Jan 2022 - Jun 2022 · 6 mos</h5>
-                    <p>I gained a lot experience building apps on the front-end using ReactJS in this internship. I also
-                        gained valuable insight in how to work on a development team and how to affectively communicate
-                        in order to maximize success in a team.I gained a lot experience building apps on the front-end
-                        using ReactJS in this internship. I also gained valuable insight in how to work on a development
+                    <p>I gained a lot experience building apps on the front-end using ReactJS in this internship. I
+                        also
+                        gained valuable insight in how to work on a development team and how to affectively
+                        communicate
+                        in order to maximize success in a team.I gained a lot experience building apps on the
+                        front-end
+                        using ReactJS in this internship. I also gained valuable insight in how to work on a
+                        development
                         team and how to affectively communicate in order to maximize success in a team.
                     </p>
-                    <p><b>Skills</b>Cascading Style Sheets (CSS) · JavaScript · ReactJS · CSS Flexbox · HTML5 · Git ·
+                    <p><b>Skills</b>Cascading Style Sheets (CSS) · JavaScript · ReactJS · CSS Flexbox · HTML5 · Git
+                        ·
                         GitHub
                     </p>
                     <hr>
@@ -123,9 +148,11 @@
                     <img src="./digitalcrafts logo.jpeg" alt="DigitalCraftsLogo">
                     <h5>Web Development</h5>
                     <h5>Aug 2022 - Nov 2022</h5>
-                    <p>Currently a full time student at DigitalCrafts in their accredited highly rated Web Development
+                    <p>Currently a full time student at DigitalCrafts in their accredited highly rated Web
+                        Development
                         program.
-                        Curriculum covers HTML, CSS, JavaScript, HTTP, DOM, JSON, React.js, RESTful APIs, Terminal and
+                        Curriculum covers HTML, CSS, JavaScript, HTTP, DOM, JSON, React.js, RESTful APIs, Terminal
+                        and
                         CLI,
                         PostgreSQL,
                         Python, AWS, Express.js, and Node.js.
@@ -141,15 +168,19 @@
 
                 </div>
             </main>
+
+            Side sections
             <aside class="sidebar-left">
 
             </aside>
-            <aside class="sidebar-right">
+            <!-- <aside class="sidebar-right">
                 <h3>Ads</h3>
 
-            </aside>
-        </section>
-        <footer class="footer">
+            </aside> -->
+                    <!-- </section> -->
+
+                    <!-- Footer -->
+                    <!-- <footer class="footer">
             <h5>About</h5>
             <h5>Community Guidelines</h5>
             <h5>Privacy & Terms</h5>
@@ -163,8 +194,9 @@
             <h5>Marketing Solutions</h5>
             <h5>Advertising</h5>
             <h5>Small Business</h5>
-        </footer>
-    </div>
+        </footer> -->
+
+                    <!-- </div> -->
 </body>
 
 </html>
