@@ -1,0 +1,26 @@
+body {
+  background-color: lightgreen;
+}
+
+.table {
+  border: solid black;
+  border-radius: 25px;
+  margin: 10px;
+  padding: 10px;
+  height: 500px;
+  display: flex;
+}
+
+.hand {
+  border: solid white;
+  border-radius: 20px;
+  margin: 5px;
+  padding: 5px;
+  height: 350px;
+  width: 500px;
+  opacity: 0.5;
+}
+
+.buttons {
+  align-content: flex-end;
+}
