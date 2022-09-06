@@ -1,4 +1,5 @@
-#*Exercise 1: Calculate the multiplication and sum of two numbers. Given two integer numbers return their product only if the product is equal to or lower than 1000, else return their sum.*
+# *Exercise 1: COMPLETED! 
+# Calculate the multiplication and sum of two numbers. Given two integer numbers return their product only if the product is equal to or lower than 1000, else return their sum.*
 
 # Part 1 Values:
 
@@ -8,20 +9,24 @@
 
 # Part 2 Values:
     
-# number1 = 40
-# number2 = 30
+# number3 = 40
+# number4 = 30
 # Expected Output: The result is 70
 
-# def nums(int):
+# def num(number1, number2):          # This defines the function, taking in both numbers as parameters.
+#     multNum = number1 * number2     # Here the numbers are multiplied. 
+#     if multNum <= 1000:             # This statement checks to see if the multiplied number (multNum) is less than or equal to 1000.
+#         print(multNum)              # If it is, print the multNum variable.
+#     else:                           # If not, print the sum of their numbers (addNum)
+#         addNum = number1 + number2
+#         print(addNum)
 
-#     numsList = (20, 30)
-#     multNum = 20*30
-#     sumNum = sum(nums)
-
-#     if 
+# num(number1, number2)             # In order for the num() function to work, it must be called using ().
+                                    # It did not work at first, but then I realized that it needed it's original parameters. Hence the num(number1, number2).
+    
 
 
-
+# ----------------------------------------------------------------
 
 
 #*Exercise 2: Print the sum of the current number and the previous number. Write a program to iterate the first 10 numbers and in each iteration, print the sum of the current and previous number.*
@@ -37,6 +42,17 @@
 # Current Number 7 Previous Number  6  Sum:  13
 # Current Number 8 Previous Number  7  Sum:  15
 # Current Number 9 Previous Number  8  Sum:  17
+
+
+
+# current_num = range(0, 10)
+# previous_num = 0
+
+# for i in current_num:
+    
+#     addedNum = i + previous_num
+#     print('Current number: ', i, 'Previous number: ', addedNum, 'Sum: ',)
+
 
 
 
