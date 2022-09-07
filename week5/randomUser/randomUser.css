@@ -1,8 +1,64 @@
 .card {
-  width: 200px;
+  width: 230px;
 }
 
 body {
+  background-color: #0e7a0d;
   display: flex;
   flex-wrap: wrap;
+}
+
+.card {
+  margin: 10px;
+  margin-left: 10px;
+}
+
+.main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+#title {
+  text-align: center;
+  color: white;
+  justify-content: center;
+  width: 100vw;
+}
+
+/* .navbar-brand {
+border-color: #0e7a0d;
+} */
+
+.btn {
+  background-color: #0e7a0d;
+  position: absolute;
+  bottom: 10px;
+  color: white;
+}
+
+p {
+  padding-bottom: 25px;
+}
+
+#titlebox {
+  width: 100%;
+}
+
+nav {
+  width: 100%;
+}
+
+a {
+  padding-left: 10px;
+}
+
+#navbutton {
+  color: white;
+  justify-self: flex-end;
+}
+
+#xbox {
+  width: 100px;
+  height: 32px;
 }
