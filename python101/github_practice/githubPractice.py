@@ -28,7 +28,7 @@
 
 # ----------------------------------------------------------------
 
-
+# DONE (ish)
 #*Exercise 2: Print the sum of the current number and the previous number. Write a program to iterate the first 10 numbers and in each iteration, print the sum of the current and previous number.*
 
 # Expected Output:
@@ -45,17 +45,26 @@
 
 
 
-# current_num = range(0, 10)
+
 # previous_num = 0
 
-# for i in current_num:
+# for current_num in range(0, 11):
     
-#     addedNum = i + previous_num
-#     print('Current number: ', i, 'Previous number: ', addedNum, 'Sum: ',)
+#     addedNum =  current_num + previous_num
+#     sumNum =  previous_num + addedNum
+#     print('Current number: ', current_num, 'Previous number: ', addedNum, 'Sum: ', sumNum)
+
+# This is Dez's solution which was similar to mine, but my output was slightly off.
+# previous_num = 0                            # Set up the initial value of the previous number globally. 
+
+# for current_num in range(1, 11):            # Set up your for loop from 1 to 10
+#     sum_value = previous_num + current_num  # Assign the previous number plus the current number to the variable sum_value
+#     print("Current Number:", current_num, "Previous Number:", previous_num, " Sum:", sum_value) 
+# #     # Modify the previous number variable by setting it to the current number variable each time it iterates through the loop
+#     previous_num = current_num
 
 
-
-
+# ----------------------------------------------------------------
 
 
 #*Exercise 3 PART 1: Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old. Concatenate strings to print the resulting output message. *
