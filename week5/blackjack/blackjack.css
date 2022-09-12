@@ -18,9 +18,13 @@ body {
   padding: 5px;
   height: 350px;
   width: 500px;
-  opacity: 0.5;
 }
 
 .buttons {
   align-content: flex-end;
+}
+
+.card {
+  height: 114px;
+  width: 83px;
 }
