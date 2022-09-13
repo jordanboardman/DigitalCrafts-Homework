@@ -1,0 +1,94 @@
+<!-- Create a card match game. The game should display 6 pairs of matching cards. When a two cards are picked that match, they should disappear from the screen. -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cardPairs.css">
+    <title>Card Pairing Game</title>
+</head>
+
+<body>
+    <div id="title">Matching Cards</div>
+    <div class="board">
+        <div class="row" id="row1">
+            <div class="cardbox" id="cardbox1">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/2_of_clubs.png" -->
+                <img class="front-card" id="card1" src="./PNG-cards-1.3/2_of_clubs.png" alt="Card1">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of front-card">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/jack_of_diamonds.png" -->
+                <img class="front-card" id="card2" src="./jack_of_diamonds.png" alt="Card2">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/10_of_hearts.png" -->
+                <img class="front-card" id="card3" src="./10_of_hearts.png" alt="Card3">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+            </div>
+        </div>
+
+        <div class="row" id="row2">
+            <div class="cardbox" id="cardbox2">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/7_of_spades.png" -->
+                <img class="front-card" id="card4" src="" alt="Card4">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/9_of_clubs.png" -->
+                <img class="front-card" id="card5" src="" alt="Card5">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/ace_of_diamonds.png" -->
+                <img class="front-card" id="card6" src="" alt="Card6">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+            </div>
+        </div>
+
+        <div class="row" id="row3">
+            <div class="cardbox" id="cardbox3">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/2_of_clubs.png" -->
+                <img class="front-card" id="card7" src="" alt="Card7">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/jack_of_diamonds.png" -->
+                <img class="front-card" id="card8" src="" alt="Card8">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/10_of_hearts.png" -->
+                <img class="front-card" id="card9" src="" alt="Card9">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+            </div>
+        </div>
+
+        <div class="row" id="row4">
+            <div class="cardbox" id="cardbox4">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/7_of_spades.png" -->
+                <img class="front-card" id="card10" src="" alt="Card10">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/9_of_clubs.png" -->
+                <img class="front-card" id="card11" src="" alt="Card11">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+                <!-- src="/Homework/weeks/week7/PNG-cards-1.3/ace_of_diamonds.png" -->
+                <img class="front-card" id="card12" src="" alt="Card12">
+                <img class="back-card" src="./PNG-cards-1.3/card_back.jpeg" alt="back of card">
+            </div>
+        </div>
+    </div>
+    <script src="./cardPairs.js"></script>
+</body>
+
+</html>
+
+
+<!--        <div onclick="setCord(0,0)" id="tile00" class="square"></div>
+            <div onclick="setCord(1,0)" id="tile10" class="square"></div>
+            <div onclick="setCord(2,0)" id="tile20" class="square"></div>
+        </div>
+        <div class="rows">
+            <div onclick="setCord(0,1)" id="tile01" class="square"></div>
+            <div onclick="setCord(1,1)" id="tile11" class="square"></div>
+            <div onclick="setCord(2,1)" id="tile21" class="square"></div>
+        </div>
+        <div class="rows">
+            <div onclick="setCord(0,2)" id="tile02" class="square"></div>
+            <div onclick="setCord(1,2)" id="tile12" class="square"></div>
+            <div onclick="setCord(2,2)" id="tile22" class="square"></div>
+        </div> -->
