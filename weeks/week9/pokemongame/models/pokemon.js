@@ -13,7 +13,10 @@ module.exports = (sequelize, DataTypes) => {
   }
   pokemon.init(
     {
-      id: DataTypes.STRING,
+      id: {
+        type: DataTypes.STRING,
+        primaryKey: true,
+      },
       name: DataTypes.STRING,
       level: DataTypes.INTEGER,
       type: DataTypes.STRING,
@@ -23,6 +26,7 @@ module.exports = (sequelize, DataTypes) => {
     {
       sequelize,
       modelName: "pokemon",
+      freezeTableName: true,
     }
   );
   return pokemon;
