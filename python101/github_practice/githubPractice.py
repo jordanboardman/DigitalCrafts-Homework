@@ -132,6 +132,15 @@
 
 # [5, 25]
 
+a = [5, 10, 15, 20, 25]
+
+def newList(a):
+    b = [0, 4]
+    c = [a[i] for i in b]
+    print(c)
+newList(a)
+
+# Couldn't figure this one out using len(). Had to reference a freecodecamp article where they said to make a new variable ('b' in this case) with the indices that you need (0 and 4 in this case). From there, you can apparently set a with the loop[i] with it, but loop through b? Not really sure how that works, tbh. 
 
 
 
