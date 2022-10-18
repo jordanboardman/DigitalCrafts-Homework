@@ -67,28 +67,43 @@
 # ----------------------------------------------------------------
 
 
-#*Exercise 3 PART 1: Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old. Concatenate strings to print the resulting output message. *
+#*Exercise 3 PART 1: (DONE) Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old. Concatenate strings to print the resulting output message. *
 
 # Expected Output:
 
 # Dezarea will be 100 years old in 2095.
 
+# def hundoYears ():
+#     birthYear = int(input('What is your birth year? '))
+
+#     name = input('What is your name? ')
+
+#     dateHundred = birthYear + 100
+
+#     print(name + ' will be 100 years old in ' + str(dateHundred) + '.')
+
+# hundoYears()
 
 
-
-
-#*Exercise 3 PART 2: Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old, except use f-strings instead of the + operator to print the resulting output message. *
+#*Exercise 3 PART 2: (DONE) Create a program that asks the user to enter their name and their age. Print out a message addressed to them that tells them the year that they will turn 100 years old, except use f-strings instead of the + operator to print the resulting output message. *
 
 # Expected Output:
 
 # Dezarea will be 100 years old in 2095.
 
+# def hundoYears ():
+#     birthYear = int(input('What is your birth year? '))
+
+#     name = input('What is your name? ')
+
+#     dateHundred = birthYear + 100
+
+#     print(f'{name} will be 100 years old in {dateHundred}. ')
+
+# hundoYears()
 
 
-
-
-
-# *Exercise 4: Ask the user for a number. Depending on whether the number is even or odd, print out an even or odd message to the user. *
+# *Exercise 4: (DONE) Ask the user for a number. Depending on whether the number is even or odd, print out an even or odd message to the user. *
 
 # Expected Output (if even number):
 
@@ -100,8 +115,15 @@
 
 # Odd Number
 
+# def isEvenisOdd():
+#     num = int(input('Yo, gimme a number: '))
 
+#     if num % 2 == 0:
+#         print('That number is even')
+#     else:
+#         print('That number is odd')
 
+# isEvenisOdd()
 
 
 # *Exercise 5: Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the first and last elements of the given list. For practice, write this code inside a function. *
