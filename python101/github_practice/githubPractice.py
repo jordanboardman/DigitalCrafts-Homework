@@ -126,19 +126,19 @@
 # isEvenisOdd()
 
 
-# *Exercise 5: Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the first and last elements of the given list. For practice, write this code inside a function. *
+# *Exercise 5 (DONE): Write a program that takes a list of numbers (for example, a = [5, 10, 15, 20, 25]) and makes a new list of only the first and last elements of the given list. For practice, write this code inside a function. *
 
 # Expected Output
 
 # [5, 25]
 
-a = [5, 10, 15, 20, 25]
+# a = [5, 10, 15, 20, 25]
 
-def newList(a):
-    b = [0, 4]
-    c = [a[i] for i in b]
-    print(c)
-newList(a)
+# def newList(a):
+#     b = [0, 4]
+#     c = [a[i] for i in b]
+#     print(c)
+# newList(a)
 
 # Couldn't figure this one out using len(). Had to reference a freecodecamp article where they said to make a new variable ('b' in this case) with the indices that you need (0 and 4 in this case). From there, you can apparently set a with the loop[i] with it, but loop through b? Not really sure how that works, tbh. 
 
@@ -154,6 +154,11 @@ newList(a)
 # r
 # a
 
+name = input('What is your name? ')
+
+def evenString(name):
+    for i in name:
+        print()
 
 
 # *Exercise 7: Write a program to remove characters from a string starting from zero up to x and return a new string. 
