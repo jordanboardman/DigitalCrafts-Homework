@@ -1,89 +1,64 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
+import ShoppingDetails from "./ShoppingDetails";
+import { v4 as uuidv4 } from "uuid";
 
+/**
+ * {
+ *  id: uuid
+ *  item: Item
+ *
+ * }
+ */
 const ShoppingList = () => {
-  const [text, setText] = useState("");
+  const [item, setItem] = useState("");
+  const [list, setList] = useState([]); //["". "", ""]   // [{}, {}, {}, {}]
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    let shopList = {
-      text,
-    };
-    let addItem = shopList.text;
-    let newElement = makeElement();
-    document.body.append(newElement);
-    newElement.append(addItem);
-  };
 
-  function makeElement() {
-    return document.createElement("li");
-  }
+    let newItemObj = {
+      id: uuidv4(),
+      item,
+    };
+    // let newList = [item, ...list] //array of strings
+    let newList = [newItemObj, ...list]; //array of objs
+
+    setList(newList);
+    setItem(""); //reset our input field
+
+    console.log(list);
+  };
 
   return (
     <>
       <h2>Shopping List</h2>
       <br />
 
-      <h3>Add new item:</h3>
+      <h3>Add new Item:</h3>
+
       <form onSubmit={handleSubmit}>
         <input
           type="text"
-          value={text}
-          onChange={(e) => setText(e.target.value)}
+          value={item}
+          onChange={(e) => setItem(e.target.value)}
         />
         <br />
+
+        <input type="submit" />
       </form>
 
-      <input type="submit">Submit</input>
+      <ul>
+        {list.map((listItem) => {
+          return (
+            <ShoppingDetails key={listItem.id} itemDetailObject={listItem} />
+          );
+        })}
+      </ul>
     </>
   );
 };
 
 export default ShoppingList;
-
-// YOU CAN DO IT THIS WAY TOO. VERONICA'S WAY.
-
-// import React, {useState} from 'react'
-
-// const ShoppingList = () => {
-//   const [item, setItem] = useState("");
-//   const [list, setList] = useState([]);
-
-//   const handleSubmit = (e) => {
-//     e.preventDefault();
-//     let newList = [item, ...list]
-//     setList(newList)
-//     setItem("")
-
-//     console.log(list);
-//   }
-
-//   return (
-//     <>
-//       <h2>Shopping List</h2>
-//       <br />
-
-//       <h3>Add new Item:</h3>
-
-//       <form onSubmit={handleSubmit}>
-//         <input type="text" value={item} onChange={e=>setItem(e.target.value)}/>
-//         <br />
-
-//         <input type="submit" />
-//       </form>
-
-//     <ul>
-
-//        {list.map(listItem =>{
-//            return <li key={listItem}>{listItem}</li>
-//        })}
-//     </ul>
-
-//     </>
-//   )
-// }
-
-// export default ShoppingList
 
 //CURSOR PARKING: *************
 // Click here
