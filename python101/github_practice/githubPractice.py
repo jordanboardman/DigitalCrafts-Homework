@@ -145,7 +145,7 @@
 
 
 
-# *Exercise 6: Print characters from a string that are present at an even index number. Write a program to accept a string from the user and display characters that are present at an even index number. *
+# *Exercise 6 DONE: Print characters from a string that are present at an even index number. Write a program to accept a string from the user and display characters that are present at an even index number. *
 
 
 # Expected Output if the original string was dezarea:
@@ -154,20 +154,40 @@
 # r
 # a
 
-name = input('What is your name? ')
+# 1. definte name variable using input(). DONE
+# 2. create a function called evenString which accepts name variable. DONE
+# 3. Write function using a for loop and a print result using a python library function in (). DONE
+# 4. Call the function and run in the terminal. DONE
 
-def evenString(name):
-    for i in name:
-        print()
+# name = input('What is your name? ')
+# answer = len(name)
+
+# def evenString(name, answer):
+#     for i in range(0, answer, 2):
+#         print(name[i])
+#         # if i % 2 == print(i):
+#         #     break
+        
+
+# evenString(name, answer)
 
 
-# *Exercise 7: Write a program to remove characters from a string starting from zero up to x and return a new string. 
+# *Exercise 7 DONE: Write a program to remove characters from a string starting from zero up to x and return a new string. 
 
 # For example:
 
 # remove_chars("dezbryan", 4) so output must be ryan. Here we need to remove first four characters from a string.
 # remove_chars("dezbryan", 2) so output must be zbryan. Here we need to remove first two characters from a string.
 # Note: x must be less than the length of the string.
+
+# lastName = input("What's your last name? ")
+
+# def removeChar(lastName) -> str:
+#     print(lastName[4:7])
+
+# removeChar(lastName)
+    
+
 
 
 

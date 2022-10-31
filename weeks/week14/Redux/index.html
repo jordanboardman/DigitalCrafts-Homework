@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    houston
+    coders
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.0.5/redux.min.js"></script>
+
+    <script>
+
+
+        //actions  - events
+        // store - liason
+        // reducers - event listeners
+
+        /**
+         * increment count 
+         */
+
+        const incrementCount = () => {   //action creator - a function that returns an object
+
+            return {   //action is an object
+
+                type: "INCREASE_COUNT"
+            }
+
+        }
+
+        const incrementByNum = (num) => { //action createor
+
+            return { //action
+                type: "INCRMENT_BY_NUM",
+                payload: num
+            }
+        }
+
+
+        const addContact = (id, firstName, city) => {
+
+            return {
+                type: "ADD_CONTACT",
+                data: {
+                    id,
+                    firstName,
+                    city
+                }
+            }
+        }
+
+        const removeContact = (id) => {
+
+            return {
+                type: "REMOVE_CONTACT",
+                id
+            }
+
+        }
+
+        //reducer is a function 
+        // purpose: is to update or define the global state
+
+        const reducer = (state, action) => {
+
+            if (state == undefined) {
+                state = {
+                    count: 0,  //is part of global state
+                    contacts: []  //array of objects
+                }
+            }
+
+            switch (action.type) {
+                case "INCREASE_COUNT":
+                    return {  //this is where the update of the global state happens
+                        ...state,
+                        count: state.count + 1
+                    }
+
+                case "INCRMENT_BY_NUM":
+                    return {
+                        ...state,
+                        count: state.count + action.payload
+                    }
+
+                case "ADD_CONTACT":
+                    return {
+                        ...state,
+                        contacts: state.contacts.concat(action.data)
+                    }
+
+                case "REMOVE_CONTACT":
+                    return {
+                        ...state,
+                        contacts: state.contacts.filter(contactObj => {
+                            return contactObj.id !== action.id   // 4 !== 3
+                        })
+                    }
+                default:
+                    return state
+
+            }
+        }
+
+        const store = Redux.createStore(reducer)
+
+        const showState = () => {
+            console.log(store.getState())
+        }
+
+        store.subscribe(showState)
+
+        store.dispatch(incrementCount())
+        store.dispatch(incrementCount())
+        store.dispatch(incrementCount())
+        store.dispatch(incrementCount())
+
+        store.dispatch(incrementByNum(5))
+        store.dispatch(incrementByNum(5))
+        store.dispatch(incrementByNum(15))
+
+
+        store.dispatch(addContact(1, "Jorge", "Richmond"))
+        store.dispatch(addContact(2, "Fiona", "Chicago"))
+        store.dispatch(addContact(3, "Carlos", "Nashville"))
+        store.dispatch(addContact(4, "Veronica", "Houston"))
+
+
+        store.dispatch(removeContact(4))
+
+    </script>
+
+</body>
+
+</html>
