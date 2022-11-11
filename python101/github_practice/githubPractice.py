@@ -201,6 +201,57 @@
 # y = [75, 65, 35, 75, 30]
 # False
 
+# Not done. Current result is a bit confusing... haha but I'm close!
+# y = str([75, 65, 35, 75, 30])
+
+# def numList (y) -> bool:
+#     for i in y:
+#         if i[0] == i[-1]:
+#             print(True)
+#         else:
+#             print(False)
+
+# numList(y)
+
+# Write a short program that prints each number from 1 to 100 on a new line. 
+#  For each multiple of 3, print "Fizz" instead of the number. 
+# For each multiple of 5, print "Buzz" instead of the number. 
+# For numbers which are multiples of both 3 and 5, print "FizzBuzz" instead of the number.
+import unittest
+
+nums = range(1, 101)
+
+def fizzBuzz(nums):
+    for i in nums:
+        if i % 3 == 0 and i % 5 == 0:
+            print('FizzBuzz')
+        elif i % 3 == 0:
+            print('Fizz')
+        elif i % 5 == 0:
+            print('Buzz')
+        else:
+            print(i)
+
+fizzBuzz(nums)
+
+# class TestFizzBuzz(unittest.TestCase):
+
+#     def testFizz(self):
+#         self.assertEqual('foo'.upper(), 'FOO')
+
+#     def test_isupper(self):
+#         self.assertTrue('FOO'.isupper())
+#         self.assertFalse('Foo'.isupper())
+
+#     def test_split(self):
+#         s = 'hello world'
+#         self.assertEqual(s.split(), ['hello', 'world'])
+#         # check that s.split fails when the separator is not a string
+#         with self.assertRaises(TypeError):
+#             s.split(2)
+
+# if __name__ == '__main__':
+#     unittest.main()
 
 
 #  * Exercise 9: Iterate the given list of numbers and return to a new list only those numbers which are divisible by 5 *
